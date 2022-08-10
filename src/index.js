@@ -36,11 +36,3 @@ const populateUI = () => {
   });
 };
 populateUI();
-
-// const laughImg = document.getElementById('testImg')
-// laughImg.src = laughing
-
-// const jokeBtn = document.getElementById('jokeBtn')
-// jokeBtn.addEventListener('click', generatejoke)
-
-// generatejoke()

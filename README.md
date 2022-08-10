@@ -1,6 +1,8 @@
 # Todo List Site
 
 > This site enables one have track of the activities to be done daily.
+# screenshot.
+![Screenshot](show.jpg)
 ## Built With
 
  - html
@@ -23,24 +25,31 @@ Use 'git clone https://github.com/GordonOtieno/todo-list' to clone the repositor
 - run **'npm run dev'** to run you project in development mode.
  
 
-## Authors
+## Author
 
 👤 **Gordon Otieno**
 
-- GitHub: [@GordonOtieno](https://github.com/GordonOtieno
-- Twitter: [@GordonO34459259](https://twitter.com/@GordonO34459259
+- GitHub: [@GordonOtieno](https://github.com/GordonOtieno)
+- Twitter: [@GordonO34459259](https://twitter.com/@GordonO34459259)
 
-
-# screenshot.
-![Screenshot](show.jpg)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/GordonOtieno/concert/issues).
+Feel free to check the [issues page](https://github.com/GordonOtieno/todo-list/issues).
 
+
+## Acknowledgment 
+
+Matt Shwery [@mshwery](https://web.archive.org/web/20190228042842/https://twitter.com/mshwery) for the Design used.
 ## Show your support
 
 Give a ⭐️ if you like this project!
 
+by @mshwery. 
+
+
+## 📝 License
+
+This project is [MIT](./LICENSE) licensed.
