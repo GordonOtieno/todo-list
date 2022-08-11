@@ -23,10 +23,6 @@
   color: rgb(119, 124, 129);
 }
 
-.fa-trash {
-  color: rgb(119, 124, 129);
-}
-
 .fa-long-arrow-right {
   color: rgb(119, 124, 129);
 }
@@ -56,6 +52,10 @@ form input[type='text'] {
   font-style: italic;
   width: 85%;
   padding: 3%;
+}
+
+.input-text {
+  font-size: 17px;
 }
 
 form .add-btn {
@@ -99,7 +99,7 @@ button {
 
 .clear a:hover {
   color: rgb(19, 18, 16);
-  text-decoration: underline;
+  text-decoration: none;
   font-weight: bold;
   list-style-type: none;
 }
@@ -107,4 +107,8 @@ button {
 .checked {
   text-decoration: line-through;
   color: rgba(129, 129, 129, 0.548);
+}
+
+.fa-trash {
+  color: rgb(119, 124, 129);
 }
