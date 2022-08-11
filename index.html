@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Todo list</title>
+    <script src="https://kit.fontawesome.com/bc4d064067.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <meta property="og:image" content="../screen.png">
+    <meta property="og:description"
+        content="This is a Webpack Project about Todo-list which you can add your to-dos, edit them, add mark as completed and store the data in localStorage">
+<script defer src="main.bundle.js"></script></head>
+
+<body>
+    <div class="container">
+        <div class="head-section"><h4 class="title">Today's Todo</h4> <i class="fa fa-refresh" aria-hidden="true"></i></div>
+        <form>
+            <input class="input-text" type="text" placeholder="Add to your List..." autofocus />
+            <button class="add-btn">
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            </button>
+        </form>
+        <div class="todos">
+            
+        </div>
+        <div class="clear">
+            <a class="clear-btn">Clear All</a>
+        </div>
+    </div>
+</body>
+
+</html>
