@@ -1,38 +1,37 @@
-import './styles/main.scss';
+import './style.css';
+import showTodo from './showTodos';
+import Tasks from './tasks';
 
-const todo = [
-  {
-    description: 'Was the car',
-    completed: true,
-    index: 1,
-  },
-  {
-    description: 'Go to Supermarket',
-    completed: false,
-    index: 2,
-  },
-  {
-    description: 'Walk the Kids',
-    completed: true,
-    index: 3,
-  },
-  {
-    description: 'Walk the Kids',
-    completed: true,
-    index: 4,
-  },
-];
+const todosList = new Tasks();
+showTodo(todosList);
 
-const populateUI = () => {
-  const todoItems = document.querySelector('.todo-items');
-  let html = '';
-  todo.forEach((item, index) => {
-    html += `
-        <div class="item-list" id=item-${index}><div class="status"><label><input type="checkbox"></label></div>
-        <div>${item.description}</div>
-        <div class="threedots"></div></div>`;
+const refresBtn = document.querySelector('.fa-refresh');
+refresBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  window.location.reload();
+});
 
-    todoItems.innerHTML = html;
-  });
-};
-populateUI();
+const addTodoBtn = document.querySelector('.add-btn');
+addTodoBtn.addEventListener('click', () => {
+  const id = `id${Math.random().toString(16).slice(2)}`;
+  const description = document.querySelector('.input-text').value.trim();
+  const completed = false;
+  const index = todosList.list.length + 1;
+
+  const newTodo = {
+    id,
+    description,
+    completed,
+    index,
+  };
+  if (description) {
+    todosList.addTodo(newTodo);
+    showTodo(todosList);
+  }
+});
+
+const clearCompleted = document.querySelector('.clear-btn');
+clearCompleted.addEventListener('click', () => {
+  todosList.clearCompletedTodos();
+  showTodo(todosList);
+});

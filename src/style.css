@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.head-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.container {
+  box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
+  max-width: 50%;
+  margin: 50px auto;
+}
+
+.fa-refresh {
+  color: rgb(119, 124, 129);
+}
+
+.fa-trash {
+  color: rgb(119, 124, 129);
+}
+
+.fa-long-arrow-right {
+  color: rgb(119, 124, 129);
+}
+
+.title {
+  padding: 3%;
+  color: rgb(42, 47, 48);
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 0;
+  position: relative;
+  border-top: 0.6px solid rgb(216, 216, 216);
+  border-right: none;
+  border-bottom: 0.6px solid rgb(216, 216, 216);
+  border-left: none;
+}
+
+.todo-edit {
+  border: none;
+}
+
+form input[type='text'] {
+  border: none;
+  font-style: italic;
+  width: 85%;
+  padding: 3%;
+}
+
+form .add-btn {
+  position: relative;
+  right: 3.2%;
+}
+
+input[type='text']:focus {
+  outline: none;
+}
+
+.todo-item {
+  padding: 3%;
+  border-bottom: 0.6px solid rgb(216, 216, 216);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.clear {
+  background-color: rgba(240, 240, 240, 0.493);
+  text-align: center;
+  padding: 3%;
+}
+
+.clear a {
+  cursor: pointer;
+  color: rgba(97, 95, 91, 0.507);
+  list-style-type: none;
+}
+
+.clear a:hover {
+  color: rgb(19, 18, 16);
+  text-decoration: underline;
+  font-weight: bold;
+  list-style-type: none;
+}
+
+.checked {
+  text-decoration: line-through;
+  color: rgba(129, 129, 129, 0.548);
+}

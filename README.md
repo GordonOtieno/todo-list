@@ -2,7 +2,7 @@
 
 > This site enables one have track of the activities to be done daily.
 # screenshot.
-![Screenshot](show.jpg)
+![Screenshot](./src/asset/show.jpg)
 ## Built With
 
  - html
@@ -22,7 +22,7 @@
 Use 'git clone https://github.com/GordonOtieno/todo-list' to clone the repository to your local environment and begin working on it.
 - run **'npm init'** to install dependancy packages.
 - run **'npm run build'** to build the project and to generate dist files.
-- run **'npm run dev'** to run you project in development mode.
+- run **'npm start'** to run you project in development mode.
  
 
 ## Author
