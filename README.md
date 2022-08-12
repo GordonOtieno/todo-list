@@ -47,8 +47,6 @@ Matt Shwery [@mshwery](https://web.archive.org/web/20190228042842/https://twitte
 
 Give a ⭐️ if you like this project!
 
-by @mshwery. 
-
 
 ## 📝 License
 
