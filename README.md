@@ -39,6 +39,8 @@ Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](https://github.com/GordonOtieno/todo-list/issues).
 
+## Live Demo 
+[To-do App](https://gordonotieno.github.io/todo-list/)
 
 ## Acknowledgment 
 
