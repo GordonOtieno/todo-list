@@ -1,7 +1,7 @@
 class StorageMock {
   static data = [];
 
-  add(obj) {
+  static add(obj) {
     StorageMock.data.push(obj);
   }
 }
