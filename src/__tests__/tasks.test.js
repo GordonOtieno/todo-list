@@ -91,4 +91,4 @@ describe('Add and remove todo functionality', () => {
   });
 });
 
-module.exports = { StorageMock, task}
+module.exports = { StorageMock, task };

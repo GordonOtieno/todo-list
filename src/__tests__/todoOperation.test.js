@@ -12,18 +12,18 @@ const clearAll = `
 
 describe('Todo List Operations', () => {
   document.body.insertAdjacentHTML('beforeend', clearAll);
-  test('Todo list description should change from `Aakash` to `New Gordon`', () => {
+  test('Todo list description should change from `Aakash` to `Edit Gordon`', () => {
     const todoContainer = document.querySelector('.todo-container');
     const taskInputValue = todoContainer.querySelector('.todo-edit');
 
     expect(taskInputValue.value).toMatch('Aakash');
 
-    const newDescription = 'New Gordon';
+    const newDescription = 'Edit Gordon';
     taskInputValue.value = newDescription;
     task.editTodo(taskInputValue.id, newDescription);
 
     expect(StorageMock.data[0].description).toMatch(newDescription);
-    expect(taskInputValue.value).toMatch('New Gordon');
+    expect(taskInputValue.value).toMatch('Edit Gordon');
   });
 
   test('Todo list should be marked as completed TRUE', () => {
