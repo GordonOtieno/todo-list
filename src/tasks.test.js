@@ -50,7 +50,21 @@ test('Add todo Item', () => {
   countTodo = todoContainer.children.length;
   expect(StorageMock.data[1]).toEqual(newObj);
   expect(countTodo).toBe(2);
+
+  newObj = {
+    id: 3,
+    description: 'Aakash',
+    completed: false,
+    index: 3,
+  };
+  task.addTodo(newObj);
+  todoContainer.insertAdjacentHTML('afterbegin', liHtml(newObj));
+  countTodo = todoContainer.children.length;
+  expect(StorageMock.data[2]).toEqual(newObj);
+  expect(countTodo).toBe(3);
 });
+
+
 
 test('Delete todo Item', () => {
   const removeBtns = document.querySelectorAll('.remove-btn');
@@ -68,9 +82,9 @@ test('Delete todo Item', () => {
 test('The number of container children should be 1', () => {
   const todoContainer = document.querySelector('.todo-container');
   let countTodo = todoContainer.children.length;
-  expect(countTodo).toBe(1);
+  expect(countTodo).toBe(2);
 
   document.querySelector('button[id="1"]').click();
   countTodo = todoContainer.children.length;
-  expect(countTodo).toBe(0);
+  expect(countTodo).toBe(1);
 });
