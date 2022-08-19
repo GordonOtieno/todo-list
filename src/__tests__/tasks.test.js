@@ -2,9 +2,9 @@
  * @jest-environment jsdom
  */
 
-import StorageMock from './__mocks__/storageMock';
+import StorageMock from '../__mocks__/storageMock';
 
-import Tasks from './tasksTodo';
+import Tasks from '../tasksTodo';
 
 const task = new Tasks();
 
@@ -23,9 +23,9 @@ function liHtml(obj) {
 describe('Add and remove todo functionality', () => {
   test('Add todo Item', () => {
     const bodyDummy = `
-    <ul class="todo-container">
-    </ul>
-  `;
+      <ul class="todo-container">
+      </ul>
+    `;
     document.body.insertAdjacentHTML('afterbegin', bodyDummy);
     const todoContainer = document.querySelector('.todo-container');
     let newObj = {
@@ -76,6 +76,7 @@ describe('Add and remove todo functionality', () => {
     });
 
     document.querySelector('button[id="2"]').click();
+    task.removeTodo(2);
   });
 
   test('The number of container children should be 1', () => {
@@ -84,8 +85,10 @@ describe('Add and remove todo functionality', () => {
     expect(countTodo).toBe(2);
 
     document.querySelector('button[id="1"]').click();
+    task.removeTodo(1);
     countTodo = todoContainer.children.length;
     expect(countTodo).toBe(1);
   });
-  // edit test
 });
+
+module.exports = { StorageMock, task}

@@ -11,27 +11,28 @@ export default class Tasks {
   }
 
   removeTodo(todoID) {
-    this.list = this.list.filter((todo) => todo.id !== todoID);
-    this.list.forEach((todo, index) => {
+    const temp = this.list.filter((todo) => todo.id !== todoID);
+    temp.forEach((todo, index) => {
       todo.index = index + 1;
     });
+    this.list = temp;
     StorageMock.data = this.list;
   }
 
   editTodo(todoId, todoDescription) {
     this.list = this.list.map((todo) => {
-      if (todo.id === todoId) {
+      if (todo.id === Number(todoId)) {
         return { ...todo, description: todoDescription };
       }
       return todo;
     });
-    localStorage.setItem('todos', JSON.stringify(this.list));
+    StorageMock.data = this.list;
   }
 
   completeTodo(todoId, status) {
-    const selected = this.list.findIndex((element) => element.id === todoId);
+    const selected = this.list.findIndex((element) => element.id === Number(todoId));
     this.list[selected].completed = status;
-    localStorage.setItem('todos', JSON.stringify(this.list));
+    StorageMock.data = this.list;
   }
 
   clearCompletedTodos() {
@@ -39,6 +40,6 @@ export default class Tasks {
     this.list.forEach((todo, index) => {
       todo.index = index + 1;
     });
-    localStorage.setItem('todos', JSON.stringify(this.list));
+    StorageMock.data = this.list;
   }
 }
