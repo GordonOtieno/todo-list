@@ -8,6 +8,9 @@
  - html
  - javascript
  - Webpack
+ 
+ ## Live Demo 
+[To-do App](https://gordonotieno.github.io/todo-list/)
 
 ## Getting Started
  In order to use the files, you will need to clone it and then follow the instructions below: 
@@ -38,9 +41,6 @@ Use 'git clone https://github.com/GordonOtieno/todo-list' to clone the repositor
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](https://github.com/GordonOtieno/todo-list/issues).
-
-## Live Demo 
-[To-do App](https://gordonotieno.github.io/todo-list/)
 
 ## Acknowledgment 
 
